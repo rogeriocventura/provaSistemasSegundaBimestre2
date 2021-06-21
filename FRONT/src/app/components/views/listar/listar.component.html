@@ -1,0 +1,32 @@
+<br>
+<br>
+
+<table style="margin-left: auto;margin-right: auto;">
+    <thead>
+        <tr>
+            <th>Nome do Medico</th>
+            <th>CRM do Medico</th>
+            
+            <th>Especialidade do Medico</th>
+            <th>Data de criação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let medico of medico">
+            <td>
+                {{medico.nome}}
+            </td>
+            <td>
+                {{medico.crm}}
+            </td>
+            
+            <td>
+                {{medico.especialidade}}
+            </td>
+            <td>
+                {{medico.createdAt | date: "dd/MM/yyyy"}}
+            </td>
+        </tr>
+    </tbody>
+</table>
+

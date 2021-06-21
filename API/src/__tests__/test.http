@@ -8,6 +8,15 @@ Content-Type: application/json
     "especialidade" :   "testes de hello world"
 }
 
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+    "nome"          :   "testeX",
+    "crm"           :   "123456",
+    "especialidade" :   "testes de hello world para prova 2"
+}
 
 
 ###

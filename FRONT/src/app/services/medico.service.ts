@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   })
 
   
-export class MedicossService {
+export class MedicosService {
 
     private baseURL = "http://localhost:3000/";
   
