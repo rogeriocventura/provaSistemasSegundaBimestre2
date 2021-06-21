@@ -1,0 +1,63 @@
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+    "nome"          :   "teste",
+    "crm"           :   "1234",
+    "especialidade" :   "testes de hello world"
+}
+
+
+
+###
+GET http://localhost:1234/medico/listar
+
+
+
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+    "nome"          :   "teste2",
+    "crm"           :   "4567",
+    "especialidade" :   "testes se funciona"
+}
+
+
+###
+POST http://localhost:1234/medico/cadastrar
+Content-Type: application/json
+
+{
+    "nome"          :   "teste3",
+    "crm"           :   "1235",
+    "especialidade" :   "testes se funciona de verdade o cadastro"
+}
+
+
+###
+GET http://localhost:1234/medico/buscar/1234
+
+
+
+###
+GET http://localhost:1234/medico/remover/1234
+
+###
+GET http://localhost:1234/medico/remover/4567
+
+###
+GET http://localhost:1234/medico/remover/1235
+
+
+###
+POST http://localhost:1234/medico/alterar
+Content-Type: application/json
+
+{
+    "nome"          :   "teste2",
+    "crm"           :   "4567",
+    "especialidade" :   "testes se funciona alterar o medico"
+}
