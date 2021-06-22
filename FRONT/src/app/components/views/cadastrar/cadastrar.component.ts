@@ -9,18 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastrarComponent implements OnInit {
   medico : Medicos = new Medicos();
-  createdAt !: string;
+  createdAt!: string;
 
   constructor(private service : MedicosService) { }
 
   ngOnInit(): void {
   }
   cadastrar(): void{
-    let medico = new Medicos();
-    medico.createdAt = new Date(this.createdAt);
-    console.log(medico.createdAt);
+    //let medico = new Medicos();
+    console.log(this.medico)
+    //medico.createdAt = new Date(this.createdAt);
+    //console.log(medico.createdAt);
 
-    this.service.cadastrar(medico).subscribe((medico) => {
+    this.service.cadastrar(this.medico).subscribe((medico) => {
       console.log(medico);
     })
   }
