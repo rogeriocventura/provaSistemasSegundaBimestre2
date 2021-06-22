@@ -1,19 +1,29 @@
 
 
     <p>
-        <mat-form-field appearance="fill">
-            <mat-label for="nome">Nome do médico</mat-label>
-            <input  type="text" name="nome" [(ngModel)]="medico.nome">
+        <mat-form-field appearance="fill">Nome do médico
+            <mat-label for="nome"></mat-label>
+            <input matInput placeholder="Nome do medico" type="text" name="nome" [(ngModel)]="medico.nome">
         </mat-form-field>
     </p>
 
     <p>
-        <mat-form-field appearance="fill">
-            <mat-label for="descricao">CRM </mat-label>
-            <input type="text" name="descricao" [(ngModel)]="medico.crm">
+        <mat-form-field appearance="fill">CRM do médico
+            <mat-label for="crm"></mat-label>
+            <input matInput placeholder="CRM do medico" type="text" name="crm" [(ngModel)]="medico.crm">
         </mat-form-field>
     </p>
+    <p>
+        <mat-form-field appearance="fill">Especialidade do médico
+            <mat-label for="especialidade"></mat-label>
+            <input matInput placeholder="Especialidade do medico" type="text" name="especialidade" [(ngModel)]="medico.especialidade">
+        </mat-form-field>
+    </p>
+    <br>
 
+    <button class="button" mat-raised-button (click)="cadastrar()">Cadastrar</button>
+   
+   <br>
  
 
 

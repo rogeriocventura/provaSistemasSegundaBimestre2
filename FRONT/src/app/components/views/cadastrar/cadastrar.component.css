@@ -1,0 +1,18 @@
+.button{
+    background: #185ec5;
+  
+    border: 1px solid #2b6de9;
+    border-radius: 3px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, .3),
+                  0 2px 7px rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    display: block;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 11px;
+    width: 100px;
+}
