@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastrar.component.css']
 })
 export class CadastrarComponent implements OnInit {
+  medico : Medicos = new Medicos();
   createdAt !: string;
 
   constructor(private service : MedicosService) { }
